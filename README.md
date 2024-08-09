@@ -14,11 +14,11 @@ The format of the file is :
 ```
 where, 
 
-`id` - is the identifier of the comment. The general structure is `"r/AskReddit/comments/{post_id}/comment/{comment_id}/"`
+* id - is the identifier of the comment. The general structure is `"r/AskReddit/comments/{post_id}/comment/{comment_id}/"`
 
-`question` - is the post id the comment addressed
+* question - is the post id the comment addressed
 
-`labels` - list of one factor or more that are associated with this comment, out of 10 options ["physical appearance", "physical health", "mental health", "habit formation", "socializing and group training", "enjoyable activities", "set goals", "media use", "app monitoring", "financial commitment"]
+* labels - list of one or more factors that are associated with this comment, out of 10 options ["physical appearance", "physical health", "mental health", "habit formation", "socializing and group training", "enjoyable activities", "set goals", "media use", "app monitoring", "financial commitment"]
 
 To get the content of the comments content you will need to use the [Reddit openshift API](https://github.com/pushshift/api) and use the `id` to fetch the context.
 
